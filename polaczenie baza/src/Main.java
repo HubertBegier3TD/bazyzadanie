@@ -39,7 +39,7 @@ public class Main {
              ResultSet rs = stmt.executeQuery(sql)) {
 
             if (rs.next()) {
-                return rs.getInt("max_id") + 1;  // max + 1
+                return rs.getInt("max_id") + 1;
             }
         }
         return 1;
